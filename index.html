@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictamen Jurídico Integral: Ordenanza Provincial Nro. 001-CGREG-08-06-2026</title>
+  <meta name="description" content="Informe Jurídico exhaustivo de constitucionalidad, legalidad y derechos humanos sobre la Ordenanza 001-CGREG-08-06-2026 del Consejo de Gobierno del Régimen Especial de Galápagos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #0a0f1d;
+      --bg-secondary: #0f172a;
+      --bg-surface: #1e293b;
+      --bg-surface-elevated: #283548;
+      --bg-card: rgba(30, 41, 59, 0.7);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #38bdf8;
+      
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+      
+      --accent-gold: #f59e0b;
+      --accent-gold-glow: rgba(245, 158, 11, 0.25);
+      --accent-cyan: #38bdf8;
+      --accent-blue: #3b82f6;
+      
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.12);
+      --danger-border: rgba(239, 68, 68, 0.35);
+      
+      --warning: #f97316;
+      --warning-bg: rgba(249, 115, 22, 0.12);
+      --warning-border: rgba(249, 115, 22, 0.35);
+      
+      --caution: #eab308;
+      --caution-bg: rgba(234, 179, 8, 0.12);
+      --caution-border: rgba(234, 179, 8, 0.35);
+      
+      --success: #10b981;
+      --success-bg: rgba(16, 185, 129, 0.12);
+      --success-border: rgba(16, 185, 129, 0.35);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
+      --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.6);
+      --shadow-glow: 0 0 25px rgba(245, 158, 11, 0.2);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #f1f5f9;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f8fafc;
+      --bg-card: rgba(255, 255, 255, 0.95);
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #0284c7;
+      
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-subtle: #94a3b8;
+      
+      --accent-gold: #b45309;
+      --accent-gold-glow: rgba(180, 83, 9, 0.15);
+      --accent-cyan: #0284c7;
+      --accent-blue: #2563eb;
+      
+      --danger: #dc2626;
+      --danger-bg: rgba(220, 38, 38, 0.08);
+      --danger-border: rgba(220, 38, 38, 0.25);
+      
+      --warning: #ea580c;
+      --warning-bg: rgba(234, 88, 12, 0.08);
+      --warning-border: rgba(234, 88, 12, 0.25);
+      
+      --caution: #ca8a04;
+      --caution-bg: rgba(202, 138, 4, 0.08);
+      --caution-border: rgba(202, 138, 4, 0.25);
+      
+      --success: #059669;
+      --success-bg: rgba(5, 150, 105, 0.08);
+      --success-border: rgba(5, 150, 105, 0.25);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 20px -3px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 20px 35px -6px rgba(0, 0, 0, 0.12);
+      --shadow-glow: 0 0 20px rgba(180, 83, 9, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.7;
+      font-size: 15.5px;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Ambient Background Graphic */
+    body::before {
+      content: "";
+      position: fixed;
+      top: -20%;
+      left: 20%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.04) 0%, rgba(56, 189, 248, 0.03) 40%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Sticky Top Header */
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-badge {
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: 1.25rem;
+      letter-spacing: 1.5px;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-badge svg {
+      color: var(--accent-gold);
+    }
+
+    .brand-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+      border-left: 1px solid var(--border-color);
+      padding-left: 0.8rem;
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .brand-subtitle { display: inline-block; }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.825rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0b1120;
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border-color: var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--accent-gold);
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    /* Layout Frame */
+    .app-layout {
+      position: relative;
+      display: flex;
+      max-width: 1650px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    /* Sidebar / Navigation */
+    .app-sidebar {
+      width: 320px;
+      position: sticky;
+      top: 60px;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      padding: 1.5rem 1rem 3rem 1.5rem;
+      border-right: 1px solid var(--border-color);
+      flex-shrink: 0;
+      scrollbar-width: thin;
+      scrollbar-color: var(--text-subtle) transparent;
+    }
+
+    .nav-search {
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    .nav-search input {
+      width: 100%;
+      padding: 0.65rem 0.85rem 0.65rem 2.2rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .nav-search input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 0 3px var(--accent-gold-glow);
+    }
+
+    .nav-search svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-subtle);
+    }
+
+    .nav-section-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-subtle);
+      font-weight: 700;
+      margin: 1.25rem 0 0.5rem 0.5rem;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.835rem;
+      font-weight: 500;
+      transition: all 0.15s ease;
+      border-left: 2px solid transparent;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+      background: var(--bg-surface);
+      border-left-color: var(--accent-gold);
+    }
+
+    .nav-link .badge-count {
+      margin-left: auto;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface-elevated);
+      color: var(--text-subtle);
+    }
+
+    /* Main Content Area */
+    .app-main {
+      flex: 1;
+      padding: 2.5rem 3rem 6rem;
+      max-width: 1250px;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero-banner {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2.25rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 350px;
+      height: 100%;
+      background: radial-gradient(circle at right top, rgba(245, 158, 11, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-pretitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: var(--accent-gold);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.15rem;
+      font-weight: 900;
+      line-height: 1.25;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 900px;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .stat-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-gold);
+    }
+
+    .stat-value {
+      font-family: 'Cinzel', serif;
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-label {
+      font-size: 0.785rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    /* Section Styling */
+    .content-section {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 80px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 2px solid var(--border-color);
+      position: relative;
+    }
+
+    .section-header::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 80px;
+      height: 2px;
+      background: var(--accent-gold);
+    }
+
+    .section-title-group {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .section-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* Callout & Alert Blocks */
+    .callout {
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 1rem;
+      border: 1px solid transparent;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .callout-icon {
+      font-size: 1.35rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .callout-content {
+      flex: 1;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .callout-danger {
+      background: var(--danger-bg);
+      border-color: var(--danger-border);
+      color: #fecaca;
+    }
+    .callout-danger .callout-title { color: #f87171; }
+    [data-theme="light"] .callout-danger { color: #991b1b; }
+
+    .callout-warning {
+      background: var(--warning-bg);
+      border-color: var(--warning-border);
+      color: #fed7aa;
+    }
+    .callout-warning .callout-title { color: #fb923c; }
+    [data-theme="light"] .callout-warning { color: #9a3412; }
+
+    .callout-info {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: rgba(56, 189, 248, 0.3);
+      color: #bae6fd;
+    }
+    .callout-info .callout-title { color: #38bdf8; }
+    [data-theme="light"] .callout-info { color: #0369a1; }
+
+    .callout-gold {
+      background: var(--accent-gold-glow);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fef3c7;
+    }
+    .callout-gold .callout-title { color: #fbbf24; }
+    [data-theme="light"] .callout-gold { color: #92400e; }
+
+    /* Cards & Containers */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.5rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
+    }
+
+    .article-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      color: var(--accent-cyan);
+      border: 1px solid var(--border-color);
+    }
+
+    .severity-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .severity-critica {
+      background: var(--danger-bg);
+      color: #f87171;
+      border: 1px solid var(--danger-border);
+    }
+
+    .severity-alta {
+      background: var(--warning-bg);
+      color: #fb923c;
+      border: 1px solid var(--warning-border);
+    }
+
+    .severity-media {
+      background: var(--caution-bg);
+      color: #fde047;
+      border: 1px solid var(--caution-border);
+    }
+
+    .severity-baja {
+      background: var(--success-bg);
+      color: #34d399;
+      border: 1px solid var(--success-border);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.65rem;
+      line-height: 1.4;
+    }
+
+    .card-body {
+      font-size: 0.915rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.785rem;
+      color: var(--text-subtle);
+    }
+
+    .legal-citation {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+    }
+
+    /* Standard Tables */
+    .table-container {
+      overflow-x: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      margin: 1.5rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.885rem;
+    }
+
+    thead th {
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 0.85rem 1.15rem;
+      border-bottom: 2px solid var(--border-color);
+      font-size: 0.825rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    tbody td {
+      padding: 0.95rem 1.15rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text-main);
+    }
+
+    /* Test de Proporcionalidad Visual Diagram */
+    .proportionality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.75rem 0;
+    }
+
+    .prop-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      position: relative;
+    }
+
+    .prop-step-num {
+      position: absolute;
+      top: -12px;
+      left: 16px;
+      background: var(--accent-gold);
+      color: #0b1120;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+    }
+
+    .prop-step-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin: 0.5rem 0 0.5rem;
+      color: var(--text-main);
+    }
+
+    .prop-status {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .status-fail {
+      background: var(--danger-bg);
+      color: #f87171;
+      border: 1px solid var(--danger-border);
+    }
+
+    .status-pass {
+      background: var(--success-bg);
+      color: #34d399;
+      border: 1px solid var(--success-border);
+    }
+
+    /* Filter Matrix Interactive Bar */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: var(--bg-surface);
+      padding: 0.85rem 1.25rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.785rem;
+      font-weight: 600;
+      background: var(--bg-surface-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--accent-gold);
+      color: #0b1120;
+      border-color: var(--accent-gold);
+    }
+
+    .filter-search-box input {
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      min-width: 240px;
+    }
+
+    .filter-search-box input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+    }
+
+    /* Accordion Details */
+    details.legal-accordion {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.85rem;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    details.legal-accordion[open] {
+      border-color: var(--accent-gold);
+    }
+
+    details.legal-accordion summary {
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      background: var(--bg-surface);
+    }
+
+    details.legal-accordion summary:hover {
+      background: var(--bg-surface-elevated);
+    }
+
+    details.legal-accordion summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.legal-accordion .accordion-body {
+      padding: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.915rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt;
+      }
+
+      .app-header, .app-sidebar, .filter-bar, .header-actions, .copy-btn {
+        display: none !important;
+      }
+
+      .app-layout {
+        display: block !important;
+      }
+
+      .app-main {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .hero-banner, .card, .table-container, .callout {
+        border: 1px solid #ccc !important;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+      }
+
+      .hero-title {
+        color: black !important;
+      }
+
+      tbody td, .card-body {
+        color: #222 !important;
+      }
+
+      .severity-critica, .severity-alta, .severity-media {
+        border: 1px solid black !important;
+        color: black !important;
+        background: transparent !important;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .app-sidebar {
+        display: none;
+      }
+      .app-main {
+        padding: 1.5rem 1rem 4rem;
+      }
+      .hero-title {
+        font-size: 1.65rem;
+      }
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--accent-gold);
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      box-shadow: var(--shadow-lg);
+      display: none;
+      z-index: 1000;
+      animation: slideUp 0.3s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- Top Navigation Bar -->
+  <header class="app-header">
+    <div class="brand-group">
+      <div class="brand-badge">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+          <path d="M2 17l10 5 10-5"></path>
+          <path d="M2 12l10 5 10-5"></path>
+        </svg>
+        <span>LEX CONSTITUTIO</span>
+      </div>
+      <div class="brand-subtitle">
+        Dictamen Jurídico Consolidado • CGREG 001-2026
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" title="Cambiar tema día/noche">
+        <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+
+      <button class="btn btn-secondary" onclick="window.print()" title="Imprimir dictamen o guardar en PDF">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        <span>Imprimir / PDF</span>
+      </button>
+
+      <a href="#litigio" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        <span>Vías de Acción</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- App Layout -->
+  <div class="app-layout">
+
+    <!-- Sidebar Table of Contents -->
+    <aside class="app-sidebar">
+      <div class="nav-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="sidebar-filter" placeholder="Buscar artículo, vicio o norma..." onkeyup="filterSidebar(this.value)">
+      </div>
+
+      <div class="nav-section-title">Índice del Dictamen</div>
+      <ul class="nav-list" id="sidebar-nav-list">
+        <li><a href="#resumen" class="nav-link active"><span>0. Resumen Ejecutivo & Dashboard</span></a></li>
+        <li><a href="#forma" class="nav-link"><span>1. Vicio de Forma & Publicidad</span><span class="badge-count">Crítico</span></a></li>
+        <li><a href="#titulo1" class="nav-link"><span>2. Generalidades (Arts. 1-23)</span><span class="badge-count">5 Vicios</span></a></li>
+        <li><a href="#titulo2-perm" class="nav-link"><span>3. Residencia Permanente (Arts. 24-28)</span><span class="badge-count">Crítico</span></a></li>
+        <li><a href="#titulo2-temp" class="nav-link"><span>4. Residencia Temporal (Arts. 29-62)</span><span class="badge-count">265 Días</span></a></li>
+        <li><a href="#titulo2-renov" class="nav-link"><span>5. Renovación & Revocatoria (Arts. 63-86)</span><span class="badge-count">Asimetría</span></a></li>
+        <li><a href="#titulo3-turistas" class="nav-link"><span>6. Turistas: Carta de Invitación (Arts. 87+)</span><span class="badge-count">Art. 92</span></a></li>
+        <li><a href="#bolsa-empleo" class="nav-link"><span>7. Bolsa de Empleo & Cuota 5% (Arts. 132-161)</span><span class="badge-count">Exclusión</span></a></li>
+        <li><a href="#sanciones-transitorias" class="nav-link"><span>8. Sanciones & Transitorias (Disp. 2da)</span><span class="badge-count">Notif. Ficta</span></a></li>
+        <li><a href="#irregularidad-familia" class="nav-link"><span>9. Análisis Especial: Cónyuges Irregulares</span><span class="badge-count">Derecho Petición</span></a></li>
+        <li><a href="#litigio" class="nav-link"><span>10. Matriz de Litigio Constitucional</span><span class="badge-count">Estrategia</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+
+      <!-- Hero Banner -->
+      <section id="resumen" class="hero-banner">
+        <div class="hero-pretitle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"></circle>
+          </svg>
+          Informe Jurídico de Constitucionalidad, Legalidad y Derechos Humanos
+        </div>
+        <h1 class="hero-title">
+          ORDENANZA PROVINCIAL NRO. 001-CGREG-08-06-2026
+        </h1>
+        <p class="hero-subtitle">
+          Auditoría integral del régimen de control de flujos migratorios, residencia, Bolsa de Gestión de Empleo y turismo en el Régimen Especial de Galápagos. Evaluación exhaustiva artículo por artículo frente al Bloque de Constitucionalidad ecuatoriano y estándares de la Corte IDH.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-value">183+</div>
+            <div class="stat-label">Artículos Examinados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" style="color: #ef4444;">8</div>
+            <div class="stat-label">Vicios de Gravedad Crítica</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" style="color: #f97316;">100%</div>
+            <div class="stat-label">Test de Proporcionalidad Desaprobado</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Rutas de Impugnación</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Callout -->
+      <div class="callout callout-danger">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <div class="callout-title">DICTAMEN JURÍDICO CONCLUYENTE: VICIO FORMAL Y DE FONDO CONCURRENTE</div>
+          <p>
+            La Ordenanza Provincial Nro. 001-CGREG-08-06-2026 adolece de <strong>vicios insubsanables de inconstitucionalidad formal</strong> (por omisión absoluta de deliberación y participación ciudadana externa previa, sumada a la opacidad documental de sus informes técnicos justificativos), y de <strong>múltiples vicios de inconstitucionalidad por el fondo</strong>: quebrantamiento del principio de supremacía procesal (Art. 76 CRE), vulneración sistemática de la unidad familiar e intimidad (Arts. 66 y 67 CRE), confiscatoriedad y delegación indebida de potestades públicas a particulares (Arts. 16, 92 y 173), e inversión inconstitucional de la carga de la prueba en perjuicio del administrado.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Filter Bar for Legal Findings -->
+      <div class="filter-bar">
+        <div class="filter-buttons">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-subtle); align-self: center; margin-right: 0.25rem;">FILTRAR:</span>
+          <button class="filter-btn active" onclick="filterFindings('all')">Todos</button>
+          <button class="filter-btn" onclick="filterFindings('critica')">🔴 Crítica</button>
+          <button class="filter-btn" onclick="filterFindings('alta')">🟠 Alta</button>
+          <button class="filter-btn" onclick="filterFindings('media')">🟡 Media</button>
+        </div>
+        <div class="filter-search-box">
+          <input type="text" id="live-search" placeholder="Filtrar por artículo o palabra clave..." onkeyup="searchCards(this.value)">
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 1: VICIO DE FORMA & TRANSPARENCIA  -->
+      <!-- ========================================== -->
+      <section id="forma" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Fase Procedimental</span>
+            <h2 class="section-title">1. Vicio de Forma: Déficit de Participación & Opacidad Técnica</h2>
+          </div>
+          <span class="severity-badge severity-critica">Gravedad Crítica</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          La formación de la Ordenanza contraviene el estándar vinculante desarrollado por la Corte Constitucional en las <strong>Sentencias 52-25-IN-25, 82-16-IN-21 y 17-12-SIN-CC</strong>. La democracia deliberativa exige difusión previa, suficiente y debate informado con los colectivos directamente afectados por las restricciones a la residencia y trabajo en Galápagos.
+        </p>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">CRE Arts. 95, 100</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Omisión de Instancias Formales de Participación Ciudadana</div>
+            <div class="card-body">
+              No consta documentación de convocatoria ni conformación de audiencias públicas, cabildos populares, consejos consultivos o veedurías ciudadanas previas a la aprobación de la ordenanza. En contraste con la jurisprudencia de la Reserva Marina (con 631 participantes en 55 talleres y 105 reuniones), aquí la deliberación ciudadana fue nula.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Sentencia 17-12-SIN-CC-1-2</span>
+              <button class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" onclick="copyCitation('Violación a los Arts. 95 y 100 CRE: Omisión de instancias formales de participación ciudadana previa en la Ordenanza 001-2026.')">Copiar Cita</button>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">CRE Art. 76.7.l</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Motivación por Remisión Inválida (Técnica "in aliunde")</div>
+            <div class="card-body">
+              El acto normativo invoca informes técnicos y jurídicos previos que nunca fueron publicados ni puestos a disposición de la ciudadanía. La doctrina administrativa exige dos requisitos acumulativos para la motivación por remisión: cita expresa y <em>efectivo acceso al contenido</em>. Ocultar los informes produce nulidad de pleno derecho por falta de motivación.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.7.l CRE & LOTAIP</span>
+              <button class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" onclick="copyCitation('Motivación por remisión in aliunde inválida por falta de acceso público a informes previos (Art. 76.7.l CRE).')">Copiar Cita</button>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">CRE Art. 18.2</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Vulneración al Acceso a la Información Pública</div>
+            <div class="card-body">
+              La omisión de los antecedentes técnicos en el portal oficial del CGREG privó a la sociedad civil de los elementos fácticos para impugnar o debatir los criterios demográficos y ecológicos invocados para endurecer el régimen migratorio.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">LOTAIP Art. 7</span>
+              <button class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" onclick="copyCitation('Vulneración al Art. 18.2 CRE y LOTAIP por retención de antecedentes técnicos.')">Copiar Cita</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento del Estándar Constitucional</th>
+                <th>Exigencia Normativa</th>
+                <th>Situación en Ordenanza 001-2026</th>
+                <th>Gravedad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Instancias de Participación (Art. 100 CRE)</strong></td>
+                <td>Audiencias, consejos consultivos o asambleas previas con sectores afectados.</td>
+                <td>No documentadas ni convocadas formalmente.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Publicidad del Proyecto Normativo</strong></td>
+                <td>Difusión previa suficiente para debate plural razonado (Sentencia 52-25-IN-25).</td>
+                <td>No se acredita difusión pública anticipada con plazo para observaciones.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Acceso a Informes Técnicos/Jurídicos</strong></td>
+                <td>Puesta a disposición pública de los antecedentes justificativos del acto.</td>
+                <td>No publicados ni accesibles; opacidad administrativa total.</td>
+                <td><span class="severity-badge severity-critica">Crítica</span></td>
+              </tr>
+              <tr>
+                <td><strong>Garantía de Motivación (Art. 76.7.l CRE)</strong></td>
+                <td>Explicitar razones sustantivas; remisión sólo válida si hay acceso al informe remitido.</td>
+                <td>Motivación por remisión <em>in aliunde</em> inválida (motivación aparente).</td>
+                <td><span class="severity-badge severity-critica">Crítica</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 2: GENERALIDADES (ARTS. 1 - 23)     -->
+      <!-- ========================================== -->
+      <section id="titulo1" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título I</span>
+            <h2 class="section-title">2. Generalidades y Vicios Estructurales (Arts. 1 al 23)</h2>
+          </div>
+          <span class="severity-badge severity-critica">5 Vicios Estructurales</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          El Título I sienta las premisas del sistema: subordinación de garantías fundamentales al principio ambiental, sanciones automáticas sin procedimiento y deslinde de responsabilidades del Estado mediante privatización de notificaciones.
+        </p>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Art. 4.g</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Supremacía Indebida del Principio Ambiental sobre el Debido Proceso</div>
+            <div class="card-body">
+              Declara la "Sostenibilidad Ambiental" como principio rector supremo al que se "subordina rigurosamente" el control migratorio. El Art. 76 de la Constitución no admite la subordinación de garantías procesales; la Sentencia 22-16-IN/21 permite regular derechos sustantivos pero nunca vaciar el debido proceso. Condiciona a la autoridad a dictar resoluciones lesivas bajo pretexto conservacionista.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76 CRE • Sentencia 22-16-IN/21</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 10</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Extinción Automática del Historial Migratorio por Mora</div>
+            <div class="card-body">
+              El vencimiento no renovado a tiempo de la residencia temporal extingue por completo los años acumulados, obligando a reiniciar desde cero, "sin que la persistencia del vínculo conyugal constituya eximente". Sanción automática de caducidad sin procedimiento sancionatorio, violando la proporcionalidad (Art. 76.6 CRE) y seguridad jurídica (Art. 82 CRE).
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Arts. 76.6, 82 CRE</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 16</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Notificación por Interpuesta Persona y Blindaje contra Indefensión</div>
+            <div class="card-body">
+              Establece que notificar un Procedimiento Administrativo Sancionatorio al auspiciante "surte plenos efectos legales", debiendo este reenviarla en 24 horas, "sin que su omisión configure indefensión o nulidad". La notificación es función pública indelegable (Arts. 164-165 COA). Trasladar el riesgo de falta de comunicación a la víctima vulnera el Art. 76.7.a y c CRE.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.7 CRE • Arts. 164-165 COA</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 8</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Auspicio Obligatorio como Control Migratorio Privatizado</div>
+            <div class="card-body">
+              Exige auspicio obligatorio de persona domiciliada, convirtiendo a particulares y empresas en garantes económicos y disciplinarios del administrado bajo responsabilidad objetiva. Condicionar el derecho a residir a la voluntad de un tercero con potenciales intereses contrapuestos vulnera la libertad y el núcleo esencial del derecho a la residencia (Art. 66.14 CRE).
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 66.14, 66.29.d CRE</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Arts. 21, 22</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Remisión Abierta y Delegación Desmedida sin Límites Legales</div>
+            <div class="card-body">
+              El Art. 21 remite aspectos medulares a "instrumentos de gestión" infralegales sin rango normativo, violando el principio de reserva de ley (Art. 132 CRE). El Art. 22 permite delegar facultades de la Secretaría Técnica sin acotar cuáles, habilitando la delegación de potestades sancionatorias en funcionarios subalternos.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Arts. 82, 132, 226 CRE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 3: RESIDENCIA PERMANENTE (24 - 28)  -->
+      <!-- ========================================== -->
+      <section id="titulo2-perm" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título II, Cap. I</span>
+            <h2 class="section-title">3. Residencia Permanente & Control de Consistencia Conyugal</h2>
+          </div>
+          <span class="severity-badge severity-critica">Epicentro de Vulneración</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          Este bloque concentra el hallazgo más lesivo de toda la ordenanza: el <strong>Control de Consistencia Conyugal (Art. 26)</strong> y el plazo inflexible de 10 años, diseñados como una barrera que precariza el núcleo familiar y trasgrede el estándar interamericano de derechos humanos.
+        </p>
+
+        <!-- Test de Proporcionalidad Diagram -->
+        <h3 style="font-size: 1.15rem; margin: 1.5rem 0 1rem; color: var(--accent-gold);">
+          Test de Proporcionalidad Constitucional (Sentencia 9-20-IN/25): Plazo de 10 Años y Control Conyugal
+        </h3>
+        <div class="proportionality-grid">
+          <div class="prop-card">
+            <div class="prop-step-num">1</div>
+            <span class="prop-status status-pass">Superado</span>
+            <div class="prop-step-title">Fin Constitucionalmente Válido</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Preservación ecológica del régimen insular y prevención de matrimonios fraudulentos (Art. 258 CRE).
+            </p>
+          </div>
+          <div class="prop-card">
+            <div class="prop-step-num">2</div>
+            <span class="prop-status status-pass">Superado</span>
+            <div class="prop-step-title">Idoneidad</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Exigir permanencia temporal y verificar la veracidad conyugal contribuye teóricamente a filtrar solicitudes no genuinas.
+            </p>
+          </div>
+          <div class="prop-card">
+            <div class="prop-step-num">3</div>
+            <span class="prop-status status-fail">No Superado</span>
+            <div class="prop-step-title">Necesidad</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Existen alternativas manifiestamente menos gravosas: cotejo de registros públicos, inspección motivada solo ante indicios y plazo prudencial de 5 años.
+            </p>
+          </div>
+          <div class="prop-card">
+            <div class="prop-step-num">4</div>
+            <span class="prop-status status-fail">Desproporcionado</span>
+            <div class="prop-step-title">Proporcionalidad Estricta</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              El sacrificio a la intimidad, vida familiar (10 años en zozobra) y dignidad humana excede con creces cualquier beneficio marginal de control.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 26</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Control de Consistencia Conyugal Vinculante e Intrusivo</div>
+            <div class="card-body">
+              Exige entrevistas personales grabadas en audio y video y verificación presencial con carácter vinculante. Si la "evaluación de consistencia" (basada en preguntas íntimas) arroja resultado adverso, anula todo el acervo probatorio (hijos comunes, matrimonio civil, bienes). Viola el derecho a la intimidad personal y familiar (Art. 66.11 y 66.20 CRE, Art. 11 CADH) y carece de regulación sobre protección de datos biométricos.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 66.20 CRE • Art. 11, 17 CADH</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 25</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Exigencia Inflexible de 10 Años sin Convalidación Retroactiva</div>
+            <div class="card-body">
+              Duplica el plazo de 5 años que la propia Corte Constitucional convalidó como "prudencial" y quintuplica los 21 meses exigidos por la Ley Orgánica de Movilidad Humana. Prohíbe la subsanación o convalidación documental retroactiva, condenando a familias con arraigo real a reiniciar el cómputo ante fallas formales leves.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 66.14, 67 CRE • Caso Viteri vs. Ecuador</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 28</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Revisión de Oficio por Fraude sin Límite Temporal</div>
+            <div class="card-body">
+              Faculta a revisar expedientes de residencia permanente "en cualquier momento" y por denuncia de cualquier tercero. El Art. 132 del COA restringe la revisión sin plazo únicamente a nulidades absolutas con caducidad de 2 meses para resolver. Este artículo convierte a la residencia permanente en un derecho eternamente precario, vulnerando la cosa decidida administrativa.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 132 COA • Sentencia 331-16-SEP-CC</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Art. 27</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Riesgo de Desplazamiento Forzado del Cónyuge Viudo</div>
+            <div class="card-body">
+              Condicionar el derecho del cónyuge supérstite a haber alcanzado previamente los años cronológicos del Art. 25 implica que quien enviude antes de una década es pasible de expulsión, configurando un desplazamiento forzado indirecto prohibido por la jurisprudencia de la Corte IDH (caso Viteri vs. Ecuador) y violando la protección a familias disgregadas (Art. 69.4 CRE).
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 69.4 CRE • Corte IDH</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 4: RESIDENCIA TEMPORAL (29 - 62)   -->
+      <!-- ========================================== -->
+      <section id="titulo2-temp" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título II, Sec. I-II</span>
+            <h2 class="section-title">4. Residencia Temporal: 265 Días y Vacío Estructural</h2>
+          </div>
+          <span class="severity-badge severity-critica">Omisión Normativa</span>
+        </div>
+
+        <div class="callout callout-warning">
+          <div class="callout-icon">🔍</div>
+          <div class="callout-content">
+            <div class="callout-title">HALLAZGO CRÍTICO: REGRESIÓN Y ASIMETRÍA ENTRE TIPOS DE CÓNYUGES</div>
+            <p>
+              La ordenanza contiene un <strong>vacío normativo absoluto</strong>: eliminó el artículo de calificación inicial para cónyuges de residentes temporales (que sí existía en el Art. 39 del Reglamento de 2017 fundamentado en el Art. 67 CRE). Mientras que a los cónyuges de residentes permanentes se les somete a 10 años de fiscalización, al cónyuge de residente temporal se le despoja de estatus laboral propio y se le niega procedimiento expreso.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Artículo</th>
+                <th>Mecanismo Cuestionado</th>
+                <th>Vulneración Jurídica</th>
+                <th>Gravedad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Art. 29</strong></td>
+                <td>Clasificación de acompañamiento sin derecho a trabajar para cónyuges de temporales.</td>
+                <td>Regresión de derechos (Art. 11.8 CRE) frente a la normativa 2017 que garantizaba trabajo.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Arts. 30-31</strong></td>
+                <td>Exigencia de contrato de arriendo de mínimo 1 año inscrito como prueba obligatoria de domicilio.</td>
+                <td>Barrera económica desproporcionada en un mercado insular con escasez de oferta formal de vivienda.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Arts. 36, 37, 42</strong></td>
+                <td>Tope rígido e improrrogable de 5 años para trabajadores y directivos sin opción a permanencia.</td>
+                <td>"Expulsión programada" que desconoce el arraigo laboral consolidado y estabilidad económica.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Arts. 56-60</strong></td>
+                <td>Presencia física obligatoria de 265 días al año (máximo 100 días de ausencia permitidos).</td>
+                <td>Métrica rígida insensible a la movilidad interinsular por salud, estudios o emergencias familiares.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Art. 59</strong></td>
+                <td>Trabajo del hogar demostrable únicamente con declaración jurada del cónyuge con mejor estatus.</td>
+                <td>Sesgo de género y subordinación probatoria que potencia riesgos de violencia intrafamiliar o coacción.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+              <tr>
+                <td><strong>Arts. 60-62</strong></td>
+                <td>Verificación in situ mediante entrevistas a vecinos y propietarios arrendadores.</td>
+                <td>Intromisión arbitraria en la esfera íntima del hogar (Art. 66.20 CRE), delegando fiscalización a terceros.</td>
+                <td><span class="severity-badge severity-alta">Alta</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 5: RENOVACIONES & REVOCATORIAS      -->
+      <!-- ========================================== -->
+      <section id="titulo2-renov" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título II, Sec. III-IV</span>
+            <h2 class="section-title">5. Renovación, Revocatoria y Umbrales Matemáticos (Arts. 63-86)</h2>
+          </div>
+          <span class="severity-badge severity-critica">Inversión de la Prueba</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          En este bloque se articula la maquinaria sancionatoria del Control de Consistencia Conyugal con los <strong>Arts. 165 al 170</strong>. La autenticidad del amor y la convivencia es sometida a porcentajes de coincidencia algorítmica.
+        </p>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Arts. 85, 169</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Umbrales Arbitrarios e Inversión Inconstitucional de la Carga Probatoria</div>
+            <div class="card-body">
+              Si en la entrevista separada grabada el resultado es:
+              <ul style="margin: 0.5rem 0 0.5rem 1.25rem; font-size: 0.875rem;">
+                <li><strong>≥ 80%:</strong> Se aprueba la condición.</li>
+                <li><strong>55% - 79%:</strong> Dispara inspección física inmediata en 15 días.</li>
+                <li><strong>&lt; 55%:</strong> <em>Presunción automática de simulación/fraude</em>, otorgando solo 10 días al administrado para probar un hecho negativo.</li>
+              </ul>
+              Esto viola la presunción de inocencia (Art. 76.2 CRE) y el deber del Estado de probar las infracciones (Art. 256 COA).
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.2 CRE • Art. 256 COA</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 62</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Equiparación Injusta: Mora Administrativa vs. Fraude Delictivo</div>
+            <div class="card-body">
+              El artículo sanciona de la misma manera la disolución judicial culpable por fraude y la simple mora en la renovación de la credencial: en ambos casos se extingue absolutamente todo el historial acumulado hacia los 10 años, desconociendo el principio de tipicidad y proporcionalidad sancionadora.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.3 y 76.6 CRE</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Art. 86.E</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Revocatoria Sumaria sin Garantías para Cónyuges Temporales</div>
+            <div class="card-body">
+              Mientras el cónyuge de residente permanente tiene un procedimiento reglado (por muy invasivo que sea), la revocatoria del cónyuge de temporal se ejecuta mediante un mero "comunicado de finalización de auspicio", despojándole de audiencia, derecho a la defensa y contradicción probatoria.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.7 CRE (Indefensión)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 6: TURISTAS & CARTA DE INVITACIÓN   -->
+      <!-- ========================================== -->
+      <section id="titulo3-turistas" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título III</span>
+            <h2 class="section-title">6. Turistas: La Carta de Invitación y Confiscatoriedad (Art. 92)</h2>
+          </div>
+          <span class="severity-badge severity-critica">Vicio Crítico</span>
+        </div>
+
+        <div class="callout callout-danger">
+          <div class="callout-icon">⚖️</div>
+          <div class="callout-content">
+            <div class="callout-title">ARTÍCULO 92: LA DISPOSICIÓN MÁS LESIVA PARA LA PROPIEDAD Y CONTRATACIÓN</div>
+            <p>
+              El Art. 92 impone al residente permanente que hospeda a un familiar o amigo la <strong>responsabilidad solidaria</strong> por su permanencia, actividades y retorno oportuno, al tiempo que le <strong>prohíbe de manera taxativa cobrar cualquier contraprestación económica</strong>. Esto configura una servidumbre forzosa que anula el derecho de propiedad y beneficia artificialmente al sector hotelero.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 92.a</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Delegación Coercitiva del Ius Imperium Estatal</div>
+            <div class="card-body">
+              El control migratorio y la verificación del abandono del territorio son deberes indelegables del Estado (Art. 226 CRE). El Art. 92 traslada coactivamente a un ciudadano particular la condición de policía migratorio de sus visitantes bajo apercibimiento sancionatorio.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 226 CRE • Art. 76.3 CRE</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Art. 92.c</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Prohibición Anticompetitiva de Contraprestación Económica</div>
+            <div class="card-body">
+              Prohibir que un residente perciba ingresos por el uso de su inmueble habitacional mientras los hoteles sí pueden cobrar libremente por el mismo servicio vulnera la libertad contractual (Art. 66.16 CRE), el derecho a la propiedad (Art. 66.26 y 321 CRE) y el principio de igualdad tributaria y comercial.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Arts. 66.16, 66.26, 321 CRE</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Art. 92.d</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Desnaturalización Sancionatoria contra el Visitante</div>
+            <div class="card-body">
+              Si se descubre un cobro económico, la sanción de expulsión o revocatoria no se aplica al anfitrión que cobra, sino al turista extranjero o nacional alojado, sancionando a quien no cometió la infracción y vulnerando la personalidad de la sanción.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.3 CRE (Culpabilidad)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 7: BOLSA DE EMPLEO & CUOTA DEL 5%  -->
+      <!-- ========================================== -->
+      <section id="bolsa-empleo" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título IV</span>
+            <h2 class="section-title">7. Bolsa de Empleo, Prelación Laboral y Cuota del 5% (Arts. 132-161)</h2>
+          </div>
+          <span class="severity-badge severity-critica">Exceso de la LOREG</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          La LOREG en su Art. 46 consagra el principio de "preferencia" laboral en favor de residentes locales. Sin embargo, la Ordenanza 001-2026 tergiversa la preferencia en <strong>exclusión total</strong> e impone al sector privado una cuota obligatoria de expulsión de trabajadores.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento de Discriminación</th>
+                <th>Sector Privado (Arts. 132-151)</th>
+                <th>Sector Público (Arts. 152-161)</th>
+                <th>Juicio Constitucional</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Meta de Reemplazo Forzoso</strong></td>
+                <td><strong>5% anual obligatorio</strong> de sustitución de foráneos por residentes locales, sin considerar oferta real técnica.</td>
+                <td><strong>Sin meta fija</strong>; evaluación flexible discrecional caso a caso.</td>
+                <td>Discriminación normativa injustificada (Art. 11.2 CRE); el Estado se autoexime de su propia carga.</td>
+              </tr>
+              <tr>
+                <td><strong>Sanción por Incumplimiento</strong></td>
+                <td>Paralización operativa: prohibición absoluta de contratar nuevo personal no residente calificado.</td>
+                <td>Ninguna sanción pecuniaria ni funcional.</td>
+                <td>Atentado a la libertad de empresa y desarrollo productivo insular.</td>
+              </tr>
+              <tr>
+                <td><strong>Instancia de Apelación</strong></td>
+                <td>No contemplada de manera expresa en el articulado.</td>
+                <td><strong>Garantizada expresamente (Art. 160):</strong> 3 días para apelar, resolución en 5 días.</td>
+                <td>Vulneración directa a la igualdad de armas procesal (Art. 76.7.m CRE).</td>
+              </tr>
+              <tr>
+                <td><strong>Plazos Concursales</strong></td>
+                <td>Comprimidos a 13-14 días hábiles (insuficiente para perfiles especializados).</td>
+                <td>Plazo de 30 días calendario con 14 días exclusivos de búsqueda.</td>
+                <td>Contraviene el mes previsto expresamente por el Art. 46 LOREG.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 8: SANCIONES & NOTIFICACIÓN FICTA   -->
+      <!-- ========================================== -->
+      <section id="sanciones-transitorias" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Título Final</span>
+            <h2 class="section-title">8. Sanciones, PAS y Notificación Ficta (Disp. Transitoria Segunda)</h2>
+          </div>
+          <span class="severity-badge severity-critica">Notificación Ficta</span>
+        </div>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Transitoria 2da</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Notificación Electrónica Ficta y Desactivación de Credenciales</div>
+            <div class="card-body">
+              Exige registrar el Casillero Digital en 90 días. Establece que los 3 correos de advertencia "se entenderán legalmente practicados con el reporte técnico del servidor emisor del CGREG" (la entidad certifica su propio envío sin verificar recepción ni lectura real). Cumplido el plazo, el software suspende automáticamente la credencial sin acto administrativo motivado previo ni recurso de defensa.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Arts. 76.7.a, 76.7.c CRE • Arts. 101, 164 COA</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Arts. 180-183</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Inexistencia de Capítulo Autónomo de Procedimiento Sancionatorio</div>
+            <div class="card-body">
+              La Ordenanza crea severas causales sustantivas de revocatoria, multas y expulsión pero <strong>carece de un capítulo procesal reglado</strong>: omite fijar el plazo exacto de contestación del auto de inicio, período formal de prueba y términos de apelación interna, remitiendo a un vacío que engendra indefensión.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Art. 76.3 CRE • Reserva Procesal COA</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="alta">
+            <div class="card-top">
+              <span class="article-badge">Art. 172</span>
+              <span class="severity-badge severity-alta">Alta</span>
+            </div>
+            <div class="card-title">Concentración Absoluta de Facultades en la Secretaría Técnica</div>
+            <div class="card-body">
+              Acumula 13 facultades en una sola dependencia administrativa: instruye, califica, fiscaliza, sanciona, revoca y ordena la expulsión con auxilio de la Fuerza Pública, sin un órgano revisor de alzada independiente dentro de la estructura institucional insular.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Principio de Imparcialidad (Art. 76 CRE)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 9: CASO ESPECIAL CÓNYUGES IRREGULARES-->
+      <!-- ========================================== -->
+      <section id="irregularidad-familia" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Análisis Especial</span>
+            <h2 class="section-title">9. Prohibición de Trámite a Cónyuges en Irregularidad & Unidad Familiar</h2>
+          </div>
+          <span class="severity-badge severity-critica">Violación Sistemática</span>
+        </div>
+
+        <p style="margin-bottom: 1.25rem;">
+          Se analizó la práctica administrativa recurrente derivada de la interpretación de la Ordenanza 001-2026: <strong>la negativa de la Secretaría Técnica a recibir solicitudes de calificación de residencia temporal a cónyuges o convivientes que se encuentran en situación de exceso de permanencia ("irregularidad")</strong>, obligándolos a salir para ser sancionados con prohibición de reingreso de 6 meses a 2 años.
+        </p>
+
+        <div class="card-grid">
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">CRE Art. 66.23</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Bloqueo Estructural al Derecho de Petición</div>
+            <div class="card-body">
+              Rechazar <em>in limine</em> en ventanilla la recepción de la solicitud sin permitir el ingreso al expediente viola el derecho fundamental a dirigir peticiones y recibir respuesta motivada. El COA obliga a admitir a trámite y resolver motivadamente; la irregularidad no es causa legal de inadmisión en la LOREG.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Sentencia 64-24-IS/24</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">CRE Art. 67</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Quebrantamiento de la Unidad Familiar & Doctrina Corte IDH</div>
+            <div class="card-body">
+              El matrimonio o unión de hecho civil no requiere estatus migratorio previo para su validez civil. La Opinión Consultiva <strong>OC-21/14 de la Corte IDH</strong> determina que los Estados no pueden quebrantar de forma irrazonable el núcleo familiar por meras faltas migratorias de carácter administrativo. Sancionar con 2 años de expulsión a quien contrajo matrimonio legítimo constituye una separación familiar forzosa.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Opinión Consultiva OC-21/14 Corte IDH</span>
+            </div>
+          </div>
+
+          <div class="card finding-card" data-severity="critica">
+            <div class="card-top">
+              <span class="article-badge">Arts. 76.3, 76.7</span>
+              <span class="severity-badge severity-critica">Crítica</span>
+            </div>
+            <div class="card-title">Equiparación Inconstitucional de "Irregular" con "Sancionado en Firme"</div>
+            <div class="card-body">
+              Estar en situación irregular por mora es una situación fáctica subsanable a través del trámite conyugal; estar sancionado exige un PAS con resolución firme. Negar el trámite antes del PAS equivale a imponer una pena anticipada sin debido proceso.
+            </div>
+            <div class="card-footer">
+              <span class="legal-citation">Principio de Presunción de Inocencia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- BLOQUE 10: ESTRATEGIA DE LITIGIO           -->
+      <!-- ========================================== -->
+      <section id="litigio" class="content-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Ruta Procesal</span>
+            <h2 class="section-title">10. Matriz Estratégica de Litigio Constitucional e Internacional</h2>
+          </div>
+          <span class="severity-badge severity-alta">Acción Inmediata</span>
+        </div>
+
+        <p style="margin-bottom: 1.5rem;">
+          Frente al cúmulo de vulneraciones detectadas, se articulan las siguientes cuatro vías de impugnación simultáneas ante los órganos de control jurisdiccional y de derechos humanos:
+        </p>
+
+        <details class="legal-accordion" open>
+          <summary>
+            <span>1. Acción Pública de Inconstitucionalidad por la Forma (Corte Constitucional)</span>
+            <span class="severity-badge severity-critica">Prioridad Máxima</span>
+          </summary>
+          <div class="accordion-body">
+            <p><strong>Órgano Competente:</strong> Corte Constitucional del Ecuador (Art. 436.2 CRE).</p>
+            <p><strong>Cargos Principales:</strong></p>
+            <ul style="margin: 0.5rem 0 0.5rem 1.5rem;">
+              <li>Vulneración del principio de democracia deliberativa y publicidad (Sentencia 52-25-IN-25).</li>
+              <li>Falta de conformación de instancias participativas exigidas por los Arts. 95 y 100 de la Constitución.</li>
+              <li>Opacidad y violación del derecho de acceso a la información pública (Art. 18.2 CRE y LOTAIP) por retención de los informes técnicos justificativos.</li>
+              <li>Motivación por remisión <em>in aliunde</em> viciada, que acarrearía la expulsión íntegra de la Ordenanza del ordenamiento jurídico.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="legal-accordion" open>
+          <summary>
+            <span>2. Acción Pública de Inconstitucionalidad por el Fondo (Artículos Específicos)</span>
+            <span class="severity-badge severity-critica">Fondo</span>
+          </summary>
+          <div class="accordion-body">
+            <p><strong>Pretensiones Concretas:</strong> Declaratoria de inconstitucionalidad con efecto vinculante y general de:</p>
+            <ul style="margin: 0.5rem 0 0.5rem 1.5rem;">
+              <li><strong>Art. 4.g:</strong> Jerarquización del principio ambiental sobre las garantías del debido proceso (Art. 76 CRE).</li>
+              <li><strong>Art. 10:</strong> Extinción automática del historial migratorio conyugal por mora administrativa (Arts. 76.6 y 82 CRE).</li>
+              <li><strong>Art. 16 y Disp. Transitoria 2da:</strong> Notificación por interpuesta persona y notificación ficta por correo (Art. 76.7.a CRE).</li>
+              <li><strong>Art. 26:</strong> Carácter vinculante del Control de Consistencia Conyugal con grabaciones obligatorias sin consentimiento e inversión de la carga probatoria (Arts. 66.11, 66.20 y 76.2 CRE).</li>
+              <li><strong>Art. 92:</strong> Responsabilidad solidaria forzosa y prohibición de cobrar alquiler en cartas de invitación (Arts. 66.16, 66.26 y 321 CRE).</li>
+              <li><strong>Arts. 134 y 151:</strong> Prelación absoluta y cuota de reemplazo del 5% exclusiva para empresas privadas (Arts. 11.2, 33 y 66.15 CRE).</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="legal-accordion">
+          <summary>
+            <span>3. Acciones de Protección con Medidas Cautelares (Casos Individuales)</span>
+            <span class="severity-badge severity-alta">Urgente</span>
+          </summary>
+          <div class="accordion-body">
+            <p><strong>Vía Idónea:</strong> Jueces Constitucionales de primer nivel en Galápagos o cantones donde resida el afectado.</p>
+            <p><strong>Casos de Procedencia Inmediata:</strong></p>
+            <ul style="margin: 0.5rem 0 0.5rem 1.5rem;">
+              <li>Cónyuges en situación de irregularidad administrativa a quienes la Secretaría Técnica se niega a recibir su carpeta de calificación (vulneración del derecho de petición y unidad familiar).</li>
+              <li>Personas notificadas con PAS a través de su auspiciante o empleador que sufrieron sanción en indefensión sin conocimiento real.</li>
+              <li>Familias sujetas a orden de expulsión tras evaluación de coincidencia conyugal matemática inferior al 55%.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="legal-accordion">
+          <summary>
+            <span>4. Denuncia ante la Defensoría del Pueblo & Petición ante la CIDH</span>
+            <span class="severity-badge severity-media">Internacional</span>
+          </summary>
+          <div class="accordion-body">
+            <p><strong>Instancia Nacional:</strong> Denuncia defensorial para que la Defensoría del Pueblo emita un Dictamen Vinculante sobre afectación sistémica a los derechos de movilidad humana, vivienda adecuada y unidad de familias insulares.</p>
+            <p><strong>Instancia Internacional:</strong> Petición y solicitud de Medidas Cautelares ante la Comisión Interamericana de Derechos Humanos (CIDH) bajo el estándar del Art. 22 de la Convención Americana sobre Derechos Humanos (prohibición de desplazamiento forzado indirecto) y Art. 17 CADH (protección del núcleo familiar).</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- Footer -->
+      <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-subtle); font-size: 0.85rem;">
+        <p><strong>DICTAMEN JURÍDICO INTEGRAL • ORDENANZA PROVINCIAL NRO. 001-CGREG-08-06-2026</strong></p>
+        <p style="margin-top: 0.35rem;">Documento preparado para patrocinio constitucional y litigio estratégico en el Régimen Especial de Galápagos.</p>
+        <p style="margin-top: 0.35rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;">Generado el 16 de Octubre de 2026 • Estado Constitucional de Derechos y Justicia</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Toast Element -->
+  <div id="toast">Cita copiada al portapapeles</div>
+
+  <script>
+    // Theme Switcher
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', newTheme);
+      
+      if (newTheme === 'light') {
+        themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+      } else {
+        themeIcon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+      }
+    });
+
+    // Copy to Clipboard
+    function copyCitation(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Cita jurídica copiada al portapapeles');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 2500);
+    }
+
+    // Filter Findings by Severity
+    function filterFindings(severity) {
+      // update buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.finding-card');
+      cards.forEach(card => {
+        const cardSev = card.getAttribute('data-severity');
+        if (severity === 'all' || cardSev === severity) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Live Search in Cards
+    function searchCards(query) {
+      const q = query.toLowerCase().trim();
+      const cards = document.querySelectorAll('.finding-card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Filter Sidebar Links
+    function filterSidebar(query) {
+      const q = query.toLowerCase().trim();
+      const items = document.querySelectorAll('#sidebar-nav-list li');
+      items.forEach(li => {
+        const text = li.innerText.toLowerCase();
+        li.style.display = text.includes(q) ? 'block' : 'none';
+      });
+    }
+
+    // Active link highlighting on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.content-section, .hero-banner');
+      const scrollPos = window.scrollY + 120;
+
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+        if (scrollPos >= top && scrollPos < top + height) {
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
